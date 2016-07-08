@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xie.day10_listviewpage_internet.MainActivity" >
+
+    <ListView
+        android:id="@+id/foodshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView 
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:text="点击加载下一页"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</FrameLayout>
