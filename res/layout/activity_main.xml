@@ -1,21 +1,37 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.xie.day10_listviewpage_internet.MainActivity" >
 
-    <ListView
-        android:id="@+id/foodshow"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
     <TextView 
-        android:id="@+id/tips"
+        android:id="@+id/app_title"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_gravity="bottom"
-        android:text="点击加载下一页"
+        android:background="#3A96FF"
+        android:textColor="#FFFFFF"
+        android:text="天天下厨房"
         android:gravity="center"
-        android:visibility="gone"
+        android:textSize="25sp"
         />
+    
+    <FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/app_title" >
+	    <ListView
+	        android:id="@+id/foodshow"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	    <TextView 
+	        android:id="@+id/tips"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_gravity="bottom"
+	        android:text="点击加载下一页"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        />
+	  </FrameLayout>
 
-</FrameLayout>
+</RelativeLayout>
