@@ -1,0 +1,2 @@
+# android_listview
+通过json解析把从网上获取的数据加载到listView，并实现分页显示
